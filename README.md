@@ -49,7 +49,7 @@ still renders.
 ## Project structure
 
 ```
-mcp_get_AI_trends/
+mcp_Trend_Radar/
 ├── server.py                 # FastMCP server — registers all 8 tools
 ├── services/
 │   ├── models.py             # TrendItem dataclass + badge formatting
@@ -71,8 +71,8 @@ mcp_get_AI_trends/
 ### Step 1 · Install
 
 ```powershell
-git clone https://github.com/girlmoony/mcp_get_AI_trends.git
-cd mcp_get_AI_trends
+git clone https://github.com/girlmoony/mcp_Trend_Radar.git
+cd mcp_Trend_Radar
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -109,7 +109,7 @@ Add the server to `claude_desktop_config.json`
   "mcpServers": {
     "trend-radar": {
       "command": "C:\\path\\to\\python.exe",
-      "args": ["C:\\path\\to\\mcp_get_AI_trends\\server.py"]
+      "args": ["C:\\path\\to\\mcp_Trend_Radar\\server.py"]
     }
   }
 }
@@ -124,7 +124,7 @@ Restart Claude Desktop. The 8 tools appear under the 🔨 tools menu, and you ca
 ### Step 4 · Register with Claude Code (CLI)
 
 ```powershell
-claude mcp add trend-radar -- python "C:\path\to\mcp_get_AI_trends\server.py"
+claude mcp add trend-radar -- python "C:\path\to\mcp_Trend_Radar\server.py"
 ```
 
 ### Step 5 · Debug with the MCP Inspector
