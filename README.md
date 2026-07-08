@@ -167,6 +167,12 @@ Copy `.env.example` to `.env` and fill in what you have — the server loads it 
 - Python 3.10+
 - `mcp` · `requests` · `feedparser` · `python-dotenv` (see `requirements.txt`)
 
+## Related projects
+
+This repo previously included **AgentLens**, a local cost/efficiency scanner for Claude Code
+sessions. It has been split out into its own repository, since it's a general-purpose tool
+unrelated to trend research: <https://github.com/girlmoony/agentlens>
+
 ## License
 
 MIT
